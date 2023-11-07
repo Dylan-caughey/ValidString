@@ -1,14 +1,15 @@
 
+
 public class PPchallenge{
 
     public static void main(String args[]){
         String sentence = "Hello \"there\" 13.";
         System.out.println(sentence);
-        System.out.println(CapLetter(sentence));
-        System.out.println(QuoteMark(sentence));
-        System.out.println(LastChar(sentence));
-        System.out.println(Period(sentence));
-        System.out.println(checkNums(sentence));
+        if((CapLetter(sentence))||(QuoteMark(sentence))||(LastChar(sentence))||(Period(sentence))||(checkNums(sentence))){
+            System.out.println("Valid String");
+        }else{
+            System.out.println("Invalid String");
+        }
     }
 
     public static boolean CapLetter(String sentence){
@@ -72,6 +73,8 @@ public class PPchallenge{
         }
     }
 
+
+    //This function does not work Properly - The rest of them do just not this one
     public static boolean checkNums(String sentence){
         int i = 0;
         int len = sentence.length();
