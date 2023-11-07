@@ -1,6 +1,6 @@
 
 
-public class PPchallenge{
+public class Challenge{
 
     public static void main(String args[]){
         String sentence = "Hello \"there\" 13.";
